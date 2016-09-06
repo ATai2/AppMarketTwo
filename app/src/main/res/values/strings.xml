@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">应用商城重构版</string>
+    <string name="no_internet">无网络连接~！</string>
+    <string name="generic_server_down">响应超时错误 ~！</string>
+    <string name="generic_error">网络异常,请稍后再试~！</string>
+    <string name="response_return_no_data">没有收到返回信息，请与软件供应商联系!</string>
+    <string name="response_return_success">服务器处理成功了!</string>
+    <string name="response_return_fail">服务器处理失败了，报9999错误，请服务器人员调试该接口!</string>
+    <string name="search_initials_games">游戏</string>
+    <string name="search_initials_bwqf">只需要输入“BWQF”即可</string>
+    <string name="search_initials">例如应用《帮我起飞》汉语拼音为“BANG WO QI FEI”</string>
+    <string name="search_initials_pinyin">支持 “拼音首字母” 搜索:</string>
+    <string name="search_prompt">输入提示</string>
+    <string name="search_text_noresult">亲，无搜索结果</string>
+    <string name="search_hint">输入拼音首字母搜索</string>
+    <string name="search_found">大家都在搜:</string>
+    <string name="btn_download">下载</string>
+    <string name="app_detail_name">帮我起飞</string>
+    <string name="app_detail_relevance">相关应用 :</string>
+    <string name="app_detail_screenshot">应用截图 :</string>
+    <string name="app_detail_company">Help We Fly</string>
+    <string name="app_detail_type">游戏</string>
+    <string name="back_key_pressed">再按一次退出</string>
+    <string name="app_mg_store_space_text">存储空间:</string>
+    <string name="app_mg_store_space_use_text">已用</string>
+    <string name="app_mg_store_space_available_text">剩余</string>
+</resources>

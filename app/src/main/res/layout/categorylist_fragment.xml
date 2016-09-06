@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkmain">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_gravity="top"
+        android:background="@drawable/title_bar_bg"
+        android:descendantFocusability="afterDescendants">
+
+        <ImageButton
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/iv_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="应用商城"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/logo"
+            android:text="下载管理" />
+
+        <Button
+            android:id="@+id/bt_downLoad_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/iv_logo"
+            android:background="@drawable/text_selector"
+            android:text="下载管理"
+            android:textColor="@color/blue"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/applist_rela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginTop="25dp"
+        android:animateLayoutChanges="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="afterDescendants"
+        android:paddingBottom="70dp"
+        android:paddingTop="35dp">
+        <!--android:layout_marginRight="95dp"-->
+        <sitv.s003.dianbo.com.appmarkettwo.customview.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:descendantFocusability="afterDescendants" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginRight="115dp"
+            android:background="@drawable/pager_bg">
+
+            <ImageView
+                android:id="@+id/cursor"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:background="@drawable/pager_pyl" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

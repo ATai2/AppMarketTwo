@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkmain"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_gravity="top">
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/title_bar_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rab_recommended"
+                style="@style/Widget.TabIndicator_three"
+                android:drawableTop="@drawable/btn_selector_recommend"
+                android:textSize="20sp"
+                android:text="推荐" />
+
+            <RadioButton
+                android:id="@+id/rab_application"
+                style="@style/Widget.TabIndicator_three"
+                android:drawableTop="@drawable/btn_selector_application"
+                android:textSize="20sp"
+                android:text="应用" />
+
+            <RadioButton
+                android:id="@+id/rab_game"
+                style="@style/Widget.TabIndicator_three"
+                android:drawableTop="@drawable/btn_selector_game"
+                android:textSize="20sp"
+                android:text="游戏" />
+
+            <RadioButton
+                android:id="@+id/rab_search"
+                style="@style/Widget.TabIndicator_three"
+                android:drawableTop="@drawable/btn_selector_search"
+                android:textSize="20sp"
+                android:text="搜索" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <sitv.s003.dianbo.com.appmarkettwo.customview.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:descendantFocusability="afterDescendants"/>
+
+</LinearLayout>

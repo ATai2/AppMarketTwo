@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="76dp"
+    android:paddingLeft="65dp"
+    android:paddingRight="65dp"
+    android:paddingTop="60dp">
+        <EditText
+            android:clickable="true"
+            android:id="@+id/et_text"
+            android:layout_width="1088dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.81"
+            android:ems="10"
+            android:hint="@string/search_hint"
+            android:inputType="textPersonName"
+            android:paddingLeft="58dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/search_bg"
+            android:textColorHint="#f1f1f1"
+            android:textSize="22dp" />
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/et_text"
+        android:layout_alignParentBottom="true"
+        android:descendantFocusability="afterDescendants">
+
+        <LinearLayout
+            android:id="@+id/lineardynamic"
+            android:layout_width="1088dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <sitv.s003.dianbo.com.appmarkettwo.customview.FixGridLayout
+                android:id="@+id/ll_wrap"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.85"
+                android:nextFocusUp="@id/et_text"
+                android:background="@drawable/search_item"></sitv.s003.dianbo.com.appmarkettwo.customview.FixGridLayout>
+        </LinearLayout>
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/search_prompt_include"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lineardynamic"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_info"
+            android:layout_width="828dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lineardynamic"
+            android:layout_marginLeft="130dp"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#2A4562"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:focusable="true"
+            android:listSelector="@drawable/border_img_selector"
+            android:scrollbars="none"
+            android:visibility="invisible"></ListView>
+
+
+        <LinearLayout
+            android:id="@+id/linear_noresult"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lineardynamic"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search_text_noresult"
+                android:textSize="35dip" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignRight="@+id/lineardynamic"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#FFFFFFFF"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

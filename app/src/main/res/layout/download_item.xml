@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1.5dip">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="82.6dip" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="82dip"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="3.5dip" />
+
+            <TextView
+                android:id="@+id/tv_appname"
+                style="@style/TextAppearance.Title.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/icon"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="12dip"
+                android:layout_toRightOf="@id/icon"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:lines="1"
+                android:text="Appname"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                style="@style/TextAppearance.Title.Bar.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_appname"
+                android:layout_below="@id/tv_appname"
+                android:focusable="false"
+                android:text="Company"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/startApplication"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignRight="@+id/delete"
+                android:layout_marginRight="15dp"
+                android:text="运行"/>
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="删除"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="200dp"
+    android:background="@drawable/default_selector"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/app_image"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="25dp"/>
+
+    <sitv.s003.dianbo.com.appmarkettwo.customview.CustomTextView
+        android:id="@+id/app_text_title"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/app_image"
+        android:text="应用名字"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/blue"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/app_text_belong"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/app_text_title"
+        android:layout_toRightOf="@id/app_image"
+        android:text="广视通"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+
+
+    <View
+        android:id="@+id/app_line"
+        android:layout_width="110dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/app_text_belong"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/app_image"
+        android:background="@color/ff_ff_99_33" />
+
+    <RatingBar
+        android:id="@+id/starscore"
+        style="@style/scoreRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="15.0dip"
+        android:layout_below="@id/app_line"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/app_image"
+        android:numStars="5"
+        android:rating="0.0"
+        android:stepSize="0.5" />
+     </RelativeLayout>

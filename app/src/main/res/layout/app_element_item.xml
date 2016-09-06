@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_selector"
+    android:focusable="true"
+    android:padding="8dp" >
+
+    <!-- android:background="@drawable/border_img_selector" -->
+    <!-- com.keep.chwl.eat.ui.AppListItem" -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:padding="3dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:padding="3dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:src="@drawable/hot"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/appname"
+                style="@style/TextAppearance.Title.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/icon"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:layout_toRightOf="@id/icon"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="Appname" />
+
+            <!--<com.origamilabs.library.views.MarQueeTextView-->
+                <!--android:id="@+id/company"-->
+
+                <!--android:layout_width="100dip"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignLeft="@id/appname"-->
+                <!--android:layout_below="@id/appname"-->
+                <!--android:ellipsize="marquee"-->
+                <!--android:focusable="false"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:marqueeRepeatLimit="marquee_forever"-->
+                <!--android:scrollHorizontally="true"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="Company" />-->
+
+            <!-- style="@style/TextAppearance.List.Secondary" -->
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appname"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="25dip"
+                android:layout_toRightOf="@id/icon"
+                android:src="@drawable/line" />
+            <!--android:layout_below="@id/company"-->
+            <RatingBar
+                android:id="@+id/starscore"
+                style="@style/scoreRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="21.0dip"
+                android:layout_below="@id/line"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:layout_toRightOf="@id/icon"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/category"
+                style="@style/TextAppearance.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/starscore"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/icon"
+                android:focusable="false"
+                android:text="Category" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/packageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

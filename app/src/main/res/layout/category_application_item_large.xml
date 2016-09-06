@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:padding="1dp" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:src="@android:color/holo_green_light" />
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextAppearance.Title.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="50dip"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="Appname" />
+
+            <TextView
+                android:id="@+id/counttext"
+                style="@style/TextAppearance.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/name"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dip"
+                android:focusable="false"
+                android:text="个" />
+
+            <TextView
+                android:id="@+id/count"
+                style="@style/TextAppearance.Count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="10dip"
+                android:layout_toLeftOf="@id/counttext"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

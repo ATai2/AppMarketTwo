@@ -1,0 +1,107 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget" />
+    <!-- 首页RadioButton样式 -->
+    <style name="Widget.TabIndicator_three" parent="@style/Widget">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:button">@null</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- CustomProgressDialog样式 -->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- progressDialog加载样式 -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!-- appname样式 -->
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="TextAppearance.Title" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/primary_text_inverse</item>
+    </style>
+
+    <style name="TextAppearance.Title.Bar" parent="@style/TextAppearance.Title">
+        <item name="android:textColor">@color/primary_text_inverse</item>
+        <item name="android:textSize">@dimen/text_size_huge</item>
+        <item name="android:shadowColor">@color/title_text_color_shadow</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    <!-- category样式 -->
+    <style name="TextAppearance.Button" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:height">@dimen/button_height</item>
+    </style>
+    <!-- scoreRatingBar样式 -->
+    <style name="scoreRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">18.0dip</item>
+        <item name="android:progressDrawable">@drawable/score_ratingbar</item>
+        <item name="android:minHeight">19.0dip</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="TextAppearance.Count" parent="@style/TextAppearance">
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <!-- 搜索fragment收缩到APP信息后数据展示Appname文字样式样式 -->
+    <style name="TextAppearance.Title.Bar.Bar" parent="@style/TextAppearance.Title">
+        <item name="android:textColor">@color/primary_text_inverse</item>
+        <item name="android:textSize">@dimen/text_size_gogu</item>
+        <item name="android:shadowColor">@color/title_text_color_shadow</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+   <!--下载按钮的style-->
+    <style name="Widget.Button" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_secondary_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+    </style>
+    <!--详情fragment里面company的style-->
+    <style name="TextAppearance.List.Secondary" parent="@style/TextAppearance.List">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:shadowColor">@color/secondary_text_color_shadow</item>
+    </style>
+    <style name="TextAppearance.List" parent="@style/TextAppearance" />
+    <!--透明样式主题-->
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/trans_parent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        　　</style>
+</resources>

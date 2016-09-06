@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ott_store_space_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/appmanage_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/ott_store_space_titlt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:focusable="false"
+            android:text="@string/app_mg_store_space_text"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dialog_text_size_small" />
+
+        <LinearLayout
+            android:id="@+id/store_space_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/app_mg_ott_store_space_used"
+                style="@style/TextAppearance.Title.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dialog_text_size_small"
+                android:text="@string/app_mg_store_space_use_text" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="15.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="#ffb7b7b7" />
+
+            <TextView
+                android:id="@+id/app_mg_ott_store_space_available"
+                style="@style/TextAppearance.Title.Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dialog_text_size_small"
+                android:text="@string/app_mg_store_space_available_text" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/app_space_percent"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20.0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@id/store_space_layout"
+            android:layout_toRightOf="@id/ott_store_space_titlt"
+            android:focusable="false"
+            android:max="100"
+            android:backgroundTint="@drawable/progress_1"
+            android:background="@drawable/progressbar_style"
+            android:singleLine="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/app_manage_vertical_spit_line1"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ott_store_space_layout"
+        android:background="@drawable/app_vertical_spit_line" />
+
+    <sitv.s003.dianbo.com.appmarkettwo.customview.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/ott_store_space_layout"
+        android:layout_toRightOf="@id/app_manage_vertical_spit_line1"
+        android:focusable="false" >
+
+        <LinearLayout
+            android:id="@+id/app_manage_sort_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" />
+    </sitv.s003.dianbo.com.appmarkettwo.customview.MyScrollView>
+
+    <ImageView
+        android:id="@+id/app_manage_vertical_spit_line2"
+        android:layout_width="20.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ott_store_space_layout"
+        android:background="@drawable/app_vertical_spit_liner" />
+
+</RelativeLayout>

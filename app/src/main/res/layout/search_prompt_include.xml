@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lineardynamic"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/search_prompt"
+            android:textColor="#043b8c" />
+        <!-- style="@style/TextAppearance.Title.Bar" -->
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:src="@drawable/search_img" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:text="帮我起飞"
+            android:textColor="#043b8c" />
+        <!-- style="@style/TextAppearance.Title.Bar" -->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/search_initials_pinyin"
+            android:textColor="#808080"
+            android:textSize="15dp" />
+        <!-- style="@style/TextAppearance.Title.Bar" -->
+
+        <TextView
+            android:id="@+id/tv_initials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:text="@string/search_initials"
+            android:textColor="#808080"
+            android:textSize="15dp" />
+        <!--
+        style="@style/TextAppearance.Title.Bar"
+        
+        -->
+
+        <TextView
+            android:id="@+id/tv_bwqf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_initials"
+            android:layout_below="@+id/tv_initials"
+            android:text="@string/search_initials_bwqf"
+            android:textColor="#808080"
+            android:textSize="15dp" />
+        <!-- style="@style/TextAppearance.Title.Bar" -->
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/scoreRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="15.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView6"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+        <!--  -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ratingBar1"
+            android:text="@string/search_initials_games"
+            android:textColor="#ff8a00"
+            android:textSize="15dip" />
+        <!-- style="@style/TextAppearance.Title.Bar" -->
+    </RelativeLayout>
+
+</merge>

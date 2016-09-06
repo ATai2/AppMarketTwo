@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffffff</color>
+    <color name="vifrification">#00ffffff</color>
+    <color name="blue">#ff043b8c</color>
+    <color name="black">#000000</color>
+    <color name="ff_99_99_99">#999999</color>
+    <color name="ff_92_92_92">#929292</color>
+    <color name="ff_cf_cf_cf">#cfcfcf</color>
+    <color name="ff_b2_c9_ff">#b2c9ff</color>
+    <color name="ff_b4_b6_b8">#b4b6b8</color>
+    <color name="ff_5a_5f_84">#5a5f84</color>
+    <color name="ff_a4_9e_9f">#a49e9f</color>
+    <color name="ff_3a_94_e8">#3a94e8</color>
+    <color name="ff_ff_99_33">#ff9933</color>
+    <color name="ff_bd_b6_b6">#bdb6b6</color>
+    <color name="ff_2a_53_99">#2a5399</color>
+    <color name="ff_25_46_63">#254663</color>
+    <color name="ff_23_40_5a">#23405a</color>
+    <color name="ff_b2_d2_fe">#b2d2fe</color>
+    <color name="ff_d5_d5_d5">#d5d5d5</color>
+    <color name="ff_ad_ad_b5">#adadb5</color>
+    <color name="ff_74_a1_cf">#74a1cf</color>
+    <color name="ff_18_1b_24">#181b24</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="primary_text_color">#bbd2e1</color>
+    <color name="primary_text_color_inverse">#ffffff</color>
+    <color name="title_text_color_shadow">#80000000</color>
+    <color name="red">#b3072f</color>
+    <color name="lanse">#043b8c</color>
+    <color name="lightgrey">#363030</color><!--灰色 -->
+    <color name="secondary_text_color_shadow">#80ffffff</color>、
+    <color name="trans_parent">#d000</color>
+
+</resources>
